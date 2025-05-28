@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    src: url(fonts/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Spectral SC';
+    src: url(fonts/Spectral_SC/SpectralSC-Bold.ttf);
+}
+
+button {
+    all: unset;
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: 'Inter';
+    font-size: 2cqb;
+}
+h1,
+h2,
+h3 {
+    font-family: 'Spectral SC';
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    &:not(.active) {
+        display: none;
+    }
+    &.active {
+        display: flex;
+    }
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    background: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    text-decoration: underline;
+    padding: 1em 2em;
+    &:hover {
+        background: rgb(0 0 0 / 0.1);
+    }
+}

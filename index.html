@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <script src="./scripts/main.js" type="module"></script>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="screen active" id="title-screen">
+            <h1>Comment jouer</h1>
+            <p>Utiliser WASD pour bouger</p>
+            <p>Appuyer Espace pour sprinter</p>
+            <p>Utiliser la souris pour viser et attaquer</p>
+            <p>Utiliser les touches 1, 2 et 3 pour changer d'arme</p>
+            <button id="newgame">Nouveau jeu</button>
+        </div>
+        <div class="screen" id="gameover-screen">
+            <h1>Tu est mort!</h1>
+            <p>Tu t'étais rendu au vague <span id="wave"><span></p>
+            <button id="back">Retour</button>
+        </div>
+        <div class="screen" id="game-screen">
+            <canvas></canvas>
+        </div>
+    </body>
+</html>
